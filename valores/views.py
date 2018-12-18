@@ -41,6 +41,7 @@ def nova_acao(request):
 
 def mostrar_cotacoes(request):
     cotacoes = Cotacao.objects.all()
+
     return render(request, 'Cotacao.html',
                   {'cotacoes': cotacoes})
 
